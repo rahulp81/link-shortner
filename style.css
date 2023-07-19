@@ -373,7 +373,6 @@ button {
 
 .link-form-wrapper {
   display: flex;
-  border: 1px solid rgb(255, 255, 255);
   background-color: var(--clr-neutral-300);
   padding: var(--size-500);
   padding-inline: var(--size-600);
@@ -387,21 +386,19 @@ button {
 .link-form-wrapper form {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid yellow; */
-  flex-grow: 1;
+  max-width: 100%;
   gap: 1.55rem;
+  flex-grow: 1;
 }
 
 .link-form-wrapper input::placeholder {
   color: rgba(0, 0, 0, 0.35);
 }
 
-.link-form-wrapper input {
+#link{
   padding: 0.5rem;
   border: none;
   border-radius: var(--size-100);
-  max-width: 100%;
-  min-height: 100%;
 }
 
 .link-form-wrapper button {
@@ -581,7 +578,7 @@ button {
   content: "";
   display: grid;
   inset: 0;
-  left: 49.7%;
+  left: calc(50% - 4px);
   border-left: 0.5rem solid var(--clr-primary-100);
   position: absolute;
 }
